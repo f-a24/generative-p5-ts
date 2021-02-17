@@ -112,7 +112,7 @@ export const P_2_3_1_02 = () => {
   let c: p5.Color;
   let lineModuleSize = 0;
   let angle = 0;
-  let angleSpeed = 1;  
+  let angleSpeed = 1;
   let lineModuleIndex = 0;
   let clickPosX = 0;
   let clickPosY = 0;
@@ -148,7 +148,7 @@ export const P_2_3_1_02 = () => {
         p.push();
         p.translate(x, y);
         p.rotate(p.radians(angle));
-        if (lineModuleIndex != 0) {
+        if (lineModuleIndex !== 0) {
           p.tint(c);
           p.image(
             lineModule[lineModuleIndex],

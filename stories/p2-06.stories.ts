@@ -268,9 +268,9 @@ export const P_2_2_2_01 = () => {
         const currentPixel = p.get(p.floor(posX), p.floor(posY));
         if (
           reachedBorder ||
-          (currentPixel[0] != 255 &&
-            currentPixel[1] != 255 &&
-            currentPixel[2] != 255)
+          (currentPixel[0] !== 255 &&
+            currentPixel[1] !== 255 &&
+            currentPixel[2] !== 255)
         ) {
           angle = getRandomAngle(direction);
 
@@ -378,9 +378,9 @@ export const P_2_2_2_02 = () => {
         const currentPixel = p.get(p.floor(posX), p.floor(posY));
         if (
           reachedBorder ||
-          (currentPixel[0] != 255 &&
-            currentPixel[1] != 255 &&
-            currentPixel[2] != 255)
+          (currentPixel[0] !== 255 &&
+            currentPixel[1] !== 255 &&
+            currentPixel[2] !== 255)
         ) {
           angle = getRandomAngle(direction);
 

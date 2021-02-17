@@ -21,7 +21,7 @@ export const P_2_2_6_01 = () => {
   let speedRelation = 2;
   let center: p5.Vector;
   let pendulumPath: p5.Vector[][];
-  let angle = 0;  
+  let angle = 0;
   let speed: number;
   let showPendulum = true;
   let showPendulumPath = true;
@@ -327,7 +327,7 @@ export const P_2_2_6_03 = () => {
   const damping = 0.998;
 
   let joints = 12;
-  let linelength = 64;  
+  let linelength = 64;
   let gravity = 0.094;
   let showPath = true;
   let showPendulum = true;

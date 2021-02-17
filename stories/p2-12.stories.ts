@@ -248,18 +248,18 @@ export const P_2_3_6_02 = () => {
         for (let gridY = 1; gridY < gridResolutionY - 1; gridY++) {
           // use only active tiles
           const currentTile = tiles[gridX][gridY];
-          if (tiles[gridX][gridY] != 0) {
+          if (tiles[gridX][gridY] !== 0) {
             let binaryResult = '';
             // check the four neightbours, each can be true or false
             // create a binary result out of it, eg. 1011
             // NORTH
-            binaryResult += tiles[gridX][gridY - 1] != 0 ? '1' : '0';
+            binaryResult += tiles[gridX][gridY - 1] !== 0 ? '1' : '0';
             // WEST
-            binaryResult += tiles[gridX - 1][gridY] != 0 ? '1' : '0';
+            binaryResult += tiles[gridX - 1][gridY] !== 0 ? '1' : '0';
             // SOUTH
-            binaryResult += tiles[gridX][gridY + 1] != 0 ? '1' : '0';
+            binaryResult += tiles[gridX][gridY + 1] !== 0 ? '1' : '0';
             // EAST
-            binaryResult += tiles[gridX + 1][gridY] != 0 ? '1' : '0';
+            binaryResult += tiles[gridX + 1][gridY] !== 0 ? '1' : '0';
 
             // convert binary string to a decimal values from 0 - 15
             const decimalResult = parseInt(binaryResult, 2);

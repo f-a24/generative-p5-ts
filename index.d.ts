@@ -5,3 +5,5 @@ declare module "*.mov";
 declare module "*.ttf";
 declare module "*.txt";
 declare module "*.otf";
+declare module "*.mp4";
+declare module "*.ogg";

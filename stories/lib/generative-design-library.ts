@@ -1,6 +1,29 @@
 import p5 from 'p5';
 import chroma from 'chroma-js';
 
+export const timestamp = () => {
+  const date = new Date();
+  const year = date.getFullYear();
+  const month = date.getMonth() + 1;
+  const day = date.getDate();
+  const hour = date.getHours();
+  const minute = date.getMinutes();
+  const second = date.getSeconds();
+  const millis = date.getMilliseconds();
+
+  return[
+    year.toString().substr(2),
+    ("00" + month).substr(-2, 2),
+    ("00" + day).substr(-2, 2),
+    '_',
+    hour,
+    ("00" + minute).substr(-2, 2),
+    ("00" + second).substr(-2, 2),
+    '_',
+    millis
+  ].join('');
+};
+
 export const RED = 'red';
 export const GREEN = 'green';
 export const BLUE = 'blue';
